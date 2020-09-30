@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+   var a = 10;          //do not use var for creating variable 
+   document.write("<h1>" + a+ "</h1>");
+    a = {
+       name:'vaibhav',
+       roll : '123',
+       address : {
+           permanent :{
+               real : 'not',
+           fake:'not,' 
+           },
+           temporary : 'old town',
+       },
+       hobby : 'cricket', 
+       pass :true,
+   }
+   let b= false;
+   const c= 12.4545;
+
+  // console.log(a); 
+  // console.log(a['name']);
+ //  console.log(a['address']['permanent']['real']);
+ console.log(a.address.permanent.real);
+     console.log(b);
+     console.log(c);
+   // c= 12.4545; gives error because of constant variable
+
+   
+   let arr = ['vaibhav',123,true,'123.34','A'];
+//    alert(arr);
+
+//  document.write(arr); 
+console.log(arr['length']);
+console.log(arr.length + arr['1']);  
+
+ arr = ['vaibhav',123,boolean =[true,false],'123.34','A'];
+ console.log(arr['2']['0']);
+
+
+  //const arry = arr.map((arryelem)=> console.log(arryelem));
+ // const arry = arr.map((arryelem)=> document.write(arryelem));
+ 
+
+ const arry = arr.find((arryelem)=> arryelem[0]=='vaibhav');
+
+    </script>
+</body>
+</html> 
